@@ -1,0 +1,11 @@
+--- sshsniff/sshsniff.c~	1999-12-24 19:03:30.000000000 +0200
++++ sshsniff/sshsniff.c	2006-06-05 09:10:13.312708352 +0300
+@@ -35,7 +35,7 @@
+ 	signal(SIGTERM,signal_exit);	/*  ... or killed */
+ 
+ 	argv = process_options(argc, argv);
+-	read_config_file("./sshsniff.conf");
++	read_config_file("/etc/sshsniff.conf");
+ 	if (getenv("HOME")) {
+ 		char path[PATH_MAX];
+ 		sprintf(path, getenv("HOME"));	/* FIXME: buffer overrun */
