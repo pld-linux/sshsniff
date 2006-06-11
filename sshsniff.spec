@@ -1,4 +1,5 @@
-Summary:	sshsniff
+Summary:	sshsniff - systemcall traffic logger
+Summary(pl):	sshsniff - program do logowania danych przechodz±cych przez wywo³ania systemowe
 Name:		sshsniff
 Version:	0.1
 Release:	0.1
@@ -13,10 +14,18 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 sshsniff is a systemcall traffic logger. It allows the logging of any
-in- and outgoing traffic from a given pid and it's childs. that also
-allows the sniffing of an ssh client and/or server of a possibly
+in- and outgoing traffic from a given pid and it's childs. That also
+allows the sniffing of an SSH client and/or server of a possibly
 compromised host. You can also use it for other processes which use
 the SYS_read and SYS_write syscalls.
+
+%description -l pl
+sshsniff to program do logowania danych przechodz±cych przez wywo³ania
+systemowe. Pozwala logowaæ dowolny ruch przychodz±cy i wychodz±cy
+procesu o podanym pidzie i jego potomków. Umo¿liwia tak¿e ¶ledzenie
+klienta lub serwera SSH prawdopodobnie przejêtego hosta. Mo¿na go
+u¿ywaæ tak¿e dla innych procesów u¿ywaj±cych wywo³añ systemowych
+SYS_read i SYS_write.
 
 %prep
 %setup -q -n %{name}
