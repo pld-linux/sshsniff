@@ -1,5 +1,5 @@
 Summary:	sshsniff - systemcall traffic logger
-Summary(pl.UTF-8):   sshsniff - program do logowania danych przechodzących przez wywołania systemowe
+Summary(pl.UTF-8):	sshsniff - program do logowania danych przechodzących przez wywołania systemowe
 Name:		sshsniff
 Version:	0.1
 Release:	0.1
